@@ -5,7 +5,7 @@ class FreeTextAdmin(admin.ModelAdmin):
     """
     Admin for FreeText model.
     """
-    list_display = ('key', 'active')
+    list_display = ('key', 'content', 'active')
     search_fields = ('key', 'content')
 
 admin.site.register(FreeText, FreeTextAdmin)
